@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="400" height="240">
+  <defs>
+    <linearGradient id="secBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="beamGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e2e8f0"/>
+      <stop offset="40%" stop-color="#94a3b8"/>
+      <stop offset="70%" stop-color="#475569"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="240" fill="url(#secBg)"/>
+  
+  <!-- Structural I-Beam 3D Isometric View -->
+  <g transform="translate(60, 60)">
+    <!-- Front Face I-Beam -->
+    <path d="M 40,20 L 110,20 L 110,32 L 83,32 L 83,118 L 110,118 L 110,130 L 40,130 L 40,118 L 67,118 L 67,32 L 40,32 Z" fill="url(#beamGrad)" stroke="#334155" stroke-width="1.5"/>
+    
+    <!-- Top Flange Extrusion -->
+    <polygon points="40,20 110,20 250,5 180,5" fill="#cbd5e1" stroke="#475569" stroke-width="1"/>
+    <!-- Web Extrusion -->
+    <polygon points="110,20 250,5 250,17 110,32" fill="#64748b" stroke="#334155" stroke-width="1"/>
+    <!-- Bottom Flange Extrusion -->
+    <polygon points="110,118 250,103 250,115 110,130" fill="#64748b" stroke="#334155" stroke-width="1"/>
+    <polygon points="83,118 223,103 250,103 110,118" fill="#94a3b8" stroke="#334155" stroke-width="1"/>
+
+    <!-- MS Angle (L-Shape) Behind -->
+    <g transform="translate(180, 40)">
+      <polygon points="10,10 60,10 60,20 25,20 25,90 10,90" fill="url(#beamGrad)" stroke="#475569" stroke-width="1.5"/>
+      <polygon points="60,10 110,-5 110,5 60,20" fill="#cbd5e1"/>
+    </g>
+  </g>
+
+  <!-- Grade Badge -->
+  <rect x="20" y="20" width="130" height="26" rx="4" fill="#a855f7" fill-opacity="0.15" stroke="#a855f7" stroke-width="1.5"/>
+  <text x="85" y="37" font-family="'Inter', sans-serif" font-size="11" font-weight="800" fill="#a855f7" text-anchor="middle">IS 2062 Grade E250</text>
+  <text x="380" y="36" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#94a3b8" text-anchor="end">Beams, Channels &amp; Angles</text>
+</svg>

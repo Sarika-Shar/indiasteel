@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <defs>
+    <linearGradient id="metalLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#475569" stop-opacity="0.35"/>
+      <stop offset="50%" stop-color="#94a3b8" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#1e293b" stop-opacity="0.6"/>
+    </linearGradient>
+    <linearGradient id="metalDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#334155" stop-opacity="0.3"/>
+    </linearGradient>
+  </defs>
+  <!-- Background grid tint -->
+  <rect width="60" height="60" fill="none"/>
+  
+  <!-- Tread 1 top-left angled -->
+  <g transform="translate(15,15) rotate(45)">
+    <path d="M -9,-3 C -9,-4.5 9,-4.5 9,-3 C 9,-1.5 -9,-1.5 -9,-3 Z" fill="url(#metalLight)"/>
+    <path d="M -8,-2.5 C -8,-3.5 8,-3.5 8,-2.5 C 8,-1.5 -8,-1.5 -8,-2.5 Z" fill="#64748b" opacity="0.4"/>
+    <path d="M -9,-3 C -9,-2 9,-2 9,-3 C 9,-4 -9,-4 -9,-3 Z" fill="url(#metalDark)"/>
+  </g>
+
+  <!-- Tread 2 bottom-right angled opposite -->
+  <g transform="translate(45,45) rotate(-45)">
+    <path d="M -9,-3 C -9,-4.5 9,-4.5 9,-3 C 9,-1.5 -9,-1.5 -9,-3 Z" fill="url(#metalLight)"/>
+    <path d="M -8,-2.5 C -8,-3.5 8,-3.5 8,-2.5 C 8,-1.5 -8,-1.5 -8,-2.5 Z" fill="#64748b" opacity="0.4"/>
+    <path d="M -9,-3 C -9,-2 9,-2 9,-3 C 9,-4 -9,-4 -9,-3 Z" fill="url(#metalDark)"/>
+  </g>
+</svg>

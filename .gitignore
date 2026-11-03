@@ -1,0 +1,8 @@
+wp-config.php
+.env
+*.sql
+*.zip
+*.bak
+*.log
+wp-content/cache/
+wp-content/upgrade/

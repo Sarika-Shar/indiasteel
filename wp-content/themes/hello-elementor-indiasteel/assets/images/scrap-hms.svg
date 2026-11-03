@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="400" height="240">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="steelG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#cbd5e1"/>
+      <stop offset="50%" stop-color="#64748b"/>
+      <stop offset="100%" stop-color="#334155"/>
+    </linearGradient>
+    <linearGradient id="rust" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9a3412"/>
+      <stop offset="50%" stop-color="#b45309"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="240" fill="url(#bg)"/>
+  <!-- Floor Grid -->
+  <path d="M 0 190 L 400 190 M 50 190 L 10 240 M 150 190 L 120 240 M 250 190 L 280 240 M 350 190 L 390 240" stroke="#334155" stroke-width="1" opacity="0.5"/>
+  <!-- Heavy Scrap Piles & Rail Cuts -->
+  <polygon points="60,190 90,120 160,110 210,190" fill="url(#steelG)" stroke="#475569" stroke-width="2"/>
+  <polygon points="140,190 190,95 270,105 320,190" fill="url(#steelG)" stroke="#64748b" stroke-width="2"/>
+  <polygon points="80,190 130,135 220,130 250,190" fill="url(#rust)" opacity="0.6"/>
+  <!-- Cut beams -->
+  <rect x="180" y="140" width="140" height="25" rx="3" transform="rotate(-15 180 140)" fill="url(#steelG)" stroke="#94a3b8" stroke-width="2"/>
+  <rect x="70" y="155" width="110" height="22" rx="3" transform="rotate(20 70 155)" fill="url(#steelG)" stroke="#94a3b8" stroke-width="2"/>
+  <!-- Badge -->
+  <rect x="20" y="20" width="110" height="26" rx="4" fill="#f59e0b" fill-opacity="0.15" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="75" y="37" font-family="'Inter', sans-serif" font-size="11" font-weight="800" fill="#f59e0b" text-anchor="middle">HMS 1 &amp; 2</text>
+  <text x="380" y="36" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#94a3b8" text-anchor="end">ISRI 200 - 206</text>
+</svg>
